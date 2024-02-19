@@ -7,6 +7,9 @@ give-stars:
 push-button:
 	@gifsicle --colors 256 --resize-height 192 images/push-button.gif > images/push-button-h192.gif
 
+welcome:
+	@gifsicle --colors 256 --resize-height 192 images/welcome.gif > images/welcome-h192.gif
+
 publish: give-stars push-button
 	@git add .
 	@git commit -m "Update images"
